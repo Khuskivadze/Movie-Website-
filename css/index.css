@@ -385,6 +385,46 @@ footer .logo{
     font-size: 2rem;
     font-weight: 400;
 }
+
+.fix-icon{
+   position: fixed;
+   left: 40px;
+   top: 40px;
+   background-color: #1c1f25;
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+#progress{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    box-shadow: -4px -3px 31px 4px rgba(0,0,0,0.90);
+    display: grid;
+    place-items: center;
+    z-index: 2;
+
+
+}
+#progress-value {
+    display: block;
+    height: calc(100% - 5px);
+    width: calc(100% -5px);
+    background-color: #1c1f25;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 0px;
+}
     
 
 

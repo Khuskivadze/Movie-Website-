@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Website</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+     
 </head>
 <body>
-  <!--Navigation=========================================-->
+
+<div id="progress">
+    <span id="progress-value"></span>
+</div>
+    
 <nav class="navigaion">
     <!--menu btn==============================-->
     <input type="checkbox" class="menu-btn" id="menu-btn">
@@ -41,7 +47,7 @@
 
 <section id="main-slider">
 
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper ">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
               <div class="main-slider-box">    
@@ -416,86 +422,12 @@
         Copyright 2022 - GoingToInternet
      </span>
 </footer>
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="js/index.js"></script>
+   
+     
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/5d7483260d.js" crossorigin="anonymous"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/index.js"></script>
 
-    <script>
-        var swiper = new Swiper(".mySwiper",{
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination:{
-                el:".swiper-pagination",
-                clickable:true,
-            },
-            autoplay:{
-            delay:5000,
-            disableOnInteraction: false,
-
-          },
-
-          navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-         },
-            
-
-         breakpoints:{
-                640: {
-                    slidesPerView : 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView : 4,
-                    spaceBetween: 40,
-                },
-                1024:{
-                    slidesPerView : 3,
-                    spaceBetween: 50,
-                
-                },
-
-
-            },
-
-        });
-
-    </script>
 </body>
 </html>
