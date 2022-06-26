@@ -332,6 +332,91 @@
      <div class="swiper-button-next"></div>
 </div>
 
+<section  id="lastest">
+    <div class="lastest-heading">
+         <h1> Lastest Movie</h1>
+    </div>
+
+    <div class="post-container">
+       <div class="post-box">
+            <div class="post-img">
+                <img src="images/post-img-1.jpg" alt="">
+            </div>      
+       </div>
+       <div class="post-box">
+          <div class="post-img">
+              <img src="images/post-img-2.jpg" alt="">
+          </div>      
+       </div>
+       <div class="post-box">
+          <div class="post-img">
+             <img src="images/post-img-3.jpg" alt="">
+          </div>      
+       </div>
+       <div class="post-box">
+         <div class="post-img">
+             <img src="images/post-img-4.jpg" alt="">
+         </div>      
+       </div>
+       <div class="post-box">
+          <div class="post-img">
+             <img src="images/post-img-5.jpg"">
+          </div>      
+       </div>
+       <div class="post-box">
+         <div class="post-img">
+             <img src="images/post-img-6.jpg" alt="">
+         </div>      
+       </div>
+       <div class="post-box">
+         <div class="post-img">
+             <img src="images/post-img-7.jpg" alt="">
+         </div>      
+       </div>
+       <div class="post-box">
+          <div class="post-img">
+             <img src="images/post-img-8.jpg" alt="">
+          </div>      
+       </div>
+       <div class="post-box">
+          <div class="post-img">
+             <img src="images/post-img-9.jpg" alt="">
+          </div>      
+       </div>
+       <div class="post-box">
+         <div class="post-img">
+             <img src="images/post-img-10.jpg" alt="">
+         </div>      
+       </div>
+       <div class="post-box">
+           <div class="post-img">
+              <img src="images/post-img-11.jpg" alt="">
+          </div>      
+       </div>
+       <div class="post-box">
+          <div class="post-img">
+             <img src="images/post-img-12.jpg" alt="">
+         </div>      
+       </div>
+    </div>
+    <div class="page-number">
+        <a href="#" class="page-active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        ....
+        <a href="#">100</a>
+
+    </div>
+</section>
+
+
+<footer>
+     <a href="index.html" class="logo">Movies <span>hd</span></a>
+     <span class="copyright">
+        Copyright 2022 - GoingToInternet
+     </span>
+</footer>
+
 
 
 
@@ -372,39 +457,45 @@
     <script src="https://kit.fontawesome.com/5d7483260d.js" crossorigin="anonymous"></script>
 
     <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1,
-          spaceBetween: 10,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-         },
-          autoplay:{
+        var swiper = new Swiper(".mySwiper",{
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination:{
+                el:".swiper-pagination",
+                clickable:true,
+            },
+            autoplay:{
             delay:5000,
             disableOnInteraction: false,
 
           },
 
-
           navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
-        },
-          breakpoints: {
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
+         },
+            
+
+         breakpoints:{
+                640: {
+                    slidesPerView : 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView : 4,
+                    spaceBetween: 40,
+                },
+                1024:{
+                    slidesPerView : 3,
+                    spaceBetween: 50,
+                
+                },
+
+
             },
-            768: {
-              slidesPerView: 4,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
-          },
+
         });
+
     </script>
 </body>
 </html>
